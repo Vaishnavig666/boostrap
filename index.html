@@ -83,7 +83,7 @@
      </div> 
   
  <script> 
- let cartItems = []; 
+let cartItems = []; 
   
  function addToCart(product, price) { 
      cartItems.push({product, price}); 
@@ -99,7 +99,7 @@
      cartItems.forEach(item => { 
          let listItem = document.createElement("li"); 
          listItem.innerText = ${item.product} - $${item.price}; 
-         cartList.appendChild(listItem); 
+         cartList.appendChild(listItem);    
          total += item.price; 
      }); 
   
@@ -113,8 +113,7 @@
   
  function checksout() { 
      alert('Thank you for your purchase!'); 
- } 
-  
+ }
  </script> 
   
   
